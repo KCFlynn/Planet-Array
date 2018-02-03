@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+<style>
+    .red{
+       color: aquamarine;
+    }
+    
+    
+    </style>
+<body>
+
+<div id="main"></div> 
+
+<script>
+    
+let pName = ["Jupiter", "Venus", "Saturn", "Mars"];
+let fromEarth = [5.2, 0.72, 9.5, 1.5];
+let sunInAug = [false, true, false, true];
+pName.push("Earth");
+fromEarth.push(0);
+sunInAug.push(true)
+    
+    for(var i = 0; i < pName.length; i++)
+        {
+            main.innerHTML += "<br><b><span style=\"color:red\">"+(pName[i])+"</span></b>";          
+            main.innerHTML += "<br>"+(fromEarth[i]);
+            main.innerHTML += "<br>"+(sunInAug[i]);
+            main.innerHTML += "<br>"+("-----------");
+        }
+
+    for(var i = 0; i < pName.length; i++)
+        {
+            if(sunInAug[i])
+                {
+                    main.innerHTML += "<br><b><span style=\"color:red\">"+(pName[i])+"</span></b>"; 
+                }
+        }
+
+</script>
+
+</body>
+</html>
